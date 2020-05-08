@@ -467,6 +467,9 @@ extern unsigned long long const kDDDefaultLogFilesDiskQuota;
  **/
 @property (nonatomic, nullable, readonly, strong) DDLogFileInfo *currentLogFileInfo;
 
+// add by Sofer 2020-05-08
+// we need to override this function
+- (NSData *)lt_dataForMessage:(DDLogMessage *)logMessage;
 @end
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
